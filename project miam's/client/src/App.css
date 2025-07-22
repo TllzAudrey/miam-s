@@ -1,0 +1,49 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-gray-800 font-sans;
+}
+
+h1, h2, h3 {
+  @apply font-bold text-gray-800;
+}
+
+input, select {
+  @apply border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-teal-500;
+}
+
+button {
+  @apply transition duration-200 ease-in-out;
+}
+
+button:hover {
+  @apply brightness-110;
+}
+
+/* Cartes ou sections */
+.card {
+  @apply bg-white shadow-md rounded-lg p-4 mb-6;
+}
+
+/* Layout */
+.container {
+  @apply max-w-5xl mx-auto px-4;
+}
+
+/* Titres */
+.section-title {
+  @apply text-xl font-semibold mb-2 text-gray-700;
+}
+
+/* Listes */
+ul {
+  @apply list-disc pl-5 text-sm;
+}
+
+/* Responsive Grid pour jours de la semaine */
+.grid-jours {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4;
+}
